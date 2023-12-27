@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EchoClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="에코서버와 클라이언트 기본" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +43,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.TcpTest [:EchoClient.main()].executor": "Run",
+    "Gradle.TcpTest [:EchoServer.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Tcp__server",
@@ -64,6 +61,28 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.EchoClient">
+    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EchoClient" />
+      <module name="TcpTest.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EchoServer" />
+      <module name="TcpTest.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EchoClient" />
+        <item itemvalue="Application.EchoServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,8 +99,17 @@
       <option name="presentableId" value="Default" />
       <updated>1703661805204</updated>
       <workItem from="1703661806229" duration="653000" />
-      <workItem from="1703662474056" duration="4552000" />
+      <workItem from="1703662474056" duration="5229000" />
     </task>
+    <task id="LOCAL-00001" summary="에코서버와 클라이언트 기본">
+      <option name="closed" value="true" />
+      <created>1703667826416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703667826416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +137,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="에코서버와 클라이언트 기본" />
+    <option name="LAST_COMMIT_MESSAGE" value="에코서버와 클라이언트 기본" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

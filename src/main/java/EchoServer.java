@@ -4,7 +4,14 @@ import java.net.*;
 public class EchoServer {
     public static void main(String[] args){
         int portNumber = 8080;
-
+        if (args.length > 0) {
+            try {
+                portNumber = Integer.parseInt(args[0]);
+            } catch (NumberFormatException e) {
+                System.err.println("Argument must be an integer");
+                System.exit(1);
+            }
+        }
         try (ServerSocket serverSocket = new ServerSocket(portNumber);
              Socket clientSocket = serverSocket.accept();
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
