@@ -80,7 +80,7 @@ public class EchoServer {
                 String[] parts = dataGot.split(" ");
                 int sequenceNum = Integer.parseInt(parts[0]);
                 //예상되는 번호의 데이터가 들어오지 않았는데 처음보는 데이터일 경우
-                if (sequenceNum != expectedSequenceNum && !sequenceList.contains(dataGot.substring(0, 1))){
+                if (sequenceNum != expectedSequenceNum && !sequenceList.contains(parts[0])){
                     //처음보는 데이터가 누락된 데이터였을 경우
                     if (missing.contains(Integer.toString(sequenceNum))){
                         System.out.println("missed packet(" +sequenceNum+ ")recovered");
@@ -104,7 +104,7 @@ public class EchoServer {
                     sequenceList.add(Integer.toString(sequenceNum));
                     expectedSequenceNum = sequenceNum+1;
                 //중복된 데이터가 들어온 경우
-                } else if (sequenceNum != expectedSequenceNum && sequenceList.contains(dataGot.substring(0, 1))) {
+                } else if (sequenceNum != expectedSequenceNum && sequenceList.contains(parts[0])) {
                     System.out.println("packet(" + sequenceNum + ")repeated");
                 //예상한 데이터가 들어온 경우
                 } else if (sequenceNum == expectedSequenceNum){
