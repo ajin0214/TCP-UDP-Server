@@ -68,9 +68,11 @@ public class EchoClient {
 
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
             String userInput;
+            int sequenceNumber = 1;
 
             while((userInput = stdIn.readLine())!= null){
-                byte[] buf = userInput.getBytes();
+                byte[] buf = (sequenceNumber + " : " + userInput).getBytes();
+                sequenceNumber+=1;
                 DatagramPacket packet = new DatagramPacket(buf, buf.length, address, portNumber);
 
                 socket.send(packet);
