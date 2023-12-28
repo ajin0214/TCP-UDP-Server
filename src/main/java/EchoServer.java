@@ -58,6 +58,44 @@ public class EchoServer {
         int portNumber = Integer.parseInt(arg);
         System.out.println("port : " + portNumber);
 
+        try{
+            DatagramSocket socket = new DatagramSocket(portNumber);
+            while(true){
+                byte[] buf = new byte[1024];
+                DatagramPacket packet = new DatagramPacket(buf, buf.length);
+
+                socket.receive(packet);
+
+                String dataGot = new String(packet.getData(),0, packet.getLength());
+                InetAddress address = packet.getAddress();
+                int clientPort = packet.getPort();
+                System.out.println("Client(Port:" + clientPort + ")>" + dataGot);
+                String[] parts = dataGot.split(" ");
+
+
+                packet = new DatagramPacket(buf, buf.length, address,clientPort);
+
+                socket.send(packet);
+
+                if (parts[2].equals("exit")){
+                    break;
+                }
+            }
+
+            socket.close();
+
+        } catch (IOException ie) {
+            System.err.println("Couldn't get I/O");
+            System.err.println(ie.getMessage());
+            System.exit(1);
+        }
+    }
+
+    public static void udpServer2(String arg) {
+        System.out.println("UDP Server Test");
+        int portNumber = Integer.parseInt(arg);
+        System.out.println("port : " + portNumber);
+
         int expectedSequenceNum = 0;
         List<String> sequenceList = new ArrayList<>();
         sequenceList.add(Integer.toString(expectedSequenceNum));
