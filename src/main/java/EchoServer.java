@@ -29,10 +29,15 @@ public class EchoServer {
                     break;
                 }
             }
+
+            clientSocket.close();
+            serverSocket.close();
+            out.close();
+            in.close();
+
         } catch (IOException ie){
             System.err.println("Exception caught when trying to listen on port " + portNumber + " or listening for a connection");
             System.err.println(ie.getMessage());
         }
-
     }
 }

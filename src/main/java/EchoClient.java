@@ -34,6 +34,7 @@ public class EchoClient {
             echoSocket.close();
             in.close();
             out.close();
+            stdIn.close();
 
         } catch (UnknownHostException ue) {
             System.err.println("Don't know about host " + hostName);
