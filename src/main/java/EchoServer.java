@@ -65,9 +65,9 @@ public class EchoServer {
 
                 socket.receive(packet);
                 String dataGot = new String(packet.getData(),0, packet.getLength());
-                System.out.println("Client>" + dataGot);
                 InetAddress address =packet.getAddress();
                 int clientPort = packet.getPort();
+                System.out.println("Client(Port:" + clientPort + ")>" + dataGot);
 
                 packet = new DatagramPacket(buf, buf.length, address,clientPort);
 
@@ -85,8 +85,5 @@ public class EchoServer {
             System.err.println(ie.getMessage());
             System.exit(1);
         }
-
     }
-
-
 }
