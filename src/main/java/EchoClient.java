@@ -84,6 +84,10 @@ public class EchoClient {
                     break;
                 }
             }
+
+            socket.close();
+            stdIn.close();
+
         } catch (IOException ie) {
             System.err.println("Couldn't get I/O");
             System.err.println(ie.getMessage());

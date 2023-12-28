@@ -77,6 +77,9 @@ public class EchoServer {
                     break;
                 }
             }
+
+            socket.close();
+
         } catch (IOException ie) {
             System.err.println("Couldn't get I/O");
             System.err.println(ie.getMessage());
