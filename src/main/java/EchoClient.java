@@ -58,11 +58,12 @@ public class EchoClient {
 
     public static void udpClient(String arg){
         System.out.println("UDP Client Test");
+        String hostName = "localhost";
         int portNumber = Integer.parseInt(arg);
         System.out.println("port : " + portNumber);
 
         try {
-            InetAddress address = InetAddress.getByName("localhost");
+            InetAddress address = InetAddress.getByName(hostName);
             DatagramSocket socket = new DatagramSocket();
 
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
@@ -82,12 +83,11 @@ public class EchoClient {
                 if (userInput.equals("exit")){
                     break;
                 }
-
             }
-
-
         } catch (IOException ie) {
-            throw new RuntimeException(ie);
+            System.err.println("Couldn't get I/O");
+            System.err.println(ie.getMessage());
+            System.exit(1);
         }
     }
 }

@@ -76,13 +76,11 @@ public class EchoServer {
                 if (dataGot.equals("exit")){
                     break;
                 }
-
-
-
             }
-
         } catch (IOException ie) {
+            System.err.println("Couldn't get I/O");
             System.err.println(ie.getMessage());
+            System.exit(1);
         }
 
     }
