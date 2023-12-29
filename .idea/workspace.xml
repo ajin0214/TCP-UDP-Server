@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="" />
+    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="udp서버 분리">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EchoServer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,28 +18,80 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Tcp_server" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2a7FeLiqdCT2ImmuqxjSECJ6UZD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.TcpTest [:EchoClient.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TcpTest [:EchoServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Udp__server&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.EchoClient">
+    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EchoClient" />
+      <module name="TcpTest.main" />
+      <option name="PROGRAM_PARAMETERS" value="udp 5060" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EchoServer" />
+      <module name="TcpTest.main" />
+      <option name="PROGRAM_PARAMETERS" value="udp 5060" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EchoClient" />
+      <item itemvalue="Application.EchoServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EchoClient" />
+        <item itemvalue="Application.EchoServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,8 +107,154 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703661805204</updated>
-      <workItem from="1703661806229" duration="2000" />
+      <workItem from="1703661806229" duration="653000" />
+      <workItem from="1703662474056" duration="5229000" />
+      <workItem from="1703720511177" duration="8925000" />
+      <workItem from="1703735329126" duration="18184000" />
+      <workItem from="1703807433535" duration="611000" />
     </task>
+    <task id="LOCAL-00001" summary="에코서버와 클라이언트 기본">
+      <option name="closed" value="true" />
+      <created>1703667826416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703667826416</updated>
+    </task>
+    <task id="LOCAL-00002" summary="포트번호 전달">
+      <option name="closed" value="true" />
+      <created>1703721358504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703721358504</updated>
+    </task>
+    <task id="LOCAL-00003" summary="세미콜론 제거">
+      <option name="closed" value="true" />
+      <created>1703721458410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703721458410</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tcp 완료">
+      <option name="closed" value="true" />
+      <created>1703731328723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703731328723</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tcp 완료_2">
+      <option name="closed" value="true" />
+      <created>1703734303515</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703734303515</updated>
+    </task>
+    <task id="LOCAL-00006" summary="udp 완료">
+      <option name="closed" value="true" />
+      <created>1703742197093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703742197093</updated>
+    </task>
+    <task id="LOCAL-00007" summary="udp 완료_2">
+      <option name="closed" value="true" />
+      <created>1703742419154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703742419154</updated>
+    </task>
+    <task id="LOCAL-00008" summary="udp 완료_3">
+      <option name="closed" value="true" />
+      <created>1703742535985</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703742535985</updated>
+    </task>
+    <task id="LOCAL-00009" summary="udp 완료_4">
+      <option name="closed" value="true" />
+      <created>1703742865648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703742865648</updated>
+    </task>
+    <task id="LOCAL-00010" summary="udp 미싱패킷 수정">
+      <option name="closed" value="true" />
+      <created>1703753563933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703753563933</updated>
+    </task>
+    <task id="LOCAL-00011" summary="udp 미싱패킷 수정2">
+      <option name="closed" value="true" />
+      <created>1703753839949</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703753839949</updated>
+    </task>
+    <task id="LOCAL-00012" summary="udp서버 분리">
+      <option name="closed" value="true" />
+      <created>1703754067582</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703754067582</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Udp_server" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="에코서버와 클라이언트 기본" />
+    <MESSAGE value="포트번호 전달" />
+    <MESSAGE value="세미콜론 제거" />
+    <MESSAGE value="tcp 완료" />
+    <MESSAGE value="tcp 완료_2" />
+    <MESSAGE value="udp 완료" />
+    <MESSAGE value="udp 완료_2" />
+    <MESSAGE value="udp 완료_3" />
+    <MESSAGE value="udp 완료_4" />
+    <MESSAGE value="udp 미싱패킷 수정" />
+    <MESSAGE value="udp 미싱패킷 수정2" />
+    <MESSAGE value="udp서버 분리" />
+    <option name="LAST_COMMIT_MESSAGE" value="udp서버 분리" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
