@@ -77,7 +77,7 @@ public class EchoServer {
 
                 socket.send(packet);
 
-                if (parts[2].equals("exit")){
+                if (parts.length == 3 && parts[2].equals("exit")){
                     break;
                 }
             }
@@ -105,7 +105,7 @@ public class EchoServer {
         try{
             DatagramSocket socket = new DatagramSocket(portNumber);
             while(true){
-                byte[] buf = new byte[100];
+                byte[] buf = new byte[1024];
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
 
                 socket.receive(packet);
@@ -154,7 +154,7 @@ public class EchoServer {
 
                 socket.send(packet);
 
-                if (parts[2].equals("exit")){
+                if (parts.length == 3 && parts[2].equals("exit")){
                     break;
                 }
             }

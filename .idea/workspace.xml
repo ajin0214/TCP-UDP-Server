@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="udp 완료_4">
+    <list default="true" id="aadde559-b411-4212-9383-33d09cfbbb57" name="Changes" comment="udp서버 분리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EchoClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EchoServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,8 @@
       <workItem from="1703661806229" duration="653000" />
       <workItem from="1703662474056" duration="5229000" />
       <workItem from="1703720511177" duration="8925000" />
-      <workItem from="1703735329126" duration="17579000" />
+      <workItem from="1703735329126" duration="18184000" />
+      <workItem from="1703807433535" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="에코서버와 클라이언트 기본">
       <option name="closed" value="true" />
@@ -185,7 +185,31 @@
       <option name="project" value="LOCAL" />
       <updated>1703742865648</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="udp 미싱패킷 수정">
+      <option name="closed" value="true" />
+      <created>1703753563933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703753563933</updated>
+    </task>
+    <task id="LOCAL-00011" summary="udp 미싱패킷 수정2">
+      <option name="closed" value="true" />
+      <created>1703753839949</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703753839949</updated>
+    </task>
+    <task id="LOCAL-00012" summary="udp서버 분리">
+      <option name="closed" value="true" />
+      <created>1703754067582</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703754067582</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +248,10 @@
     <MESSAGE value="udp 완료_2" />
     <MESSAGE value="udp 완료_3" />
     <MESSAGE value="udp 완료_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="udp 완료_4" />
+    <MESSAGE value="udp 미싱패킷 수정" />
+    <MESSAGE value="udp 미싱패킷 수정2" />
+    <MESSAGE value="udp서버 분리" />
+    <option name="LAST_COMMIT_MESSAGE" value="udp서버 분리" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
